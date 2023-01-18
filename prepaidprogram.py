@@ -170,7 +170,7 @@ def prepaidVoucher():
             total_before_vat_elec = purchase_amount_elec - (tax_elec + municipal_charges)
             unit_price = 1.50
             purchased_units = total_before_vat_elec / unit_price          
-            pin = random.randint(0, 99999999999999999999)
+            pin = random.randint(10000000000000000000, 99999999999999999999)
             TodayDate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
             
             print(">" * 56)
