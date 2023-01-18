@@ -140,6 +140,8 @@ def prepaidVoucher():
                 
             elif network_ans == network[3]:
                 amount1 = float(input("Enter amount: "))
+                TodayDate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
+                pin = random.randint(0, 99999999999999999999)
                 
                 print(">" * 56)
                 print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
