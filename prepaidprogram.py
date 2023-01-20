@@ -54,7 +54,7 @@ def prepaidVoucher():
             print("TOTAL VAT                                ", "R", "%.2f" % tax_water)
             print("TOTAL AFTER VAT                          ", "R", "%.2f" % grand_total)
             print("")
-            print(f'Congratulations you brought {"%.2f" % amount_of_kl} Kilolitres of water',)
+            print(f'Congratulations you brought {"%.2f" % amount_of_kl} Kilolitres of water')
             print()
             print(f"PIN NO: {pin}"); print("-" * 55)
             print("")
