@@ -10,8 +10,8 @@ voucher = ["water", "airtime", "electricity"]
 network = ["mtn", "vodacom", "cell c", "telkom"]
 
 #The person who is attending the client
-cashier_name = str(input("Cashier name: "))
-cashier_surname = str(input("Cashier surname: "))
+cashier_name = input("Cashier name: ")
+cashier_surname = input("Cashier surname: ")
 print("")
 bold = "\33[1m"
 
