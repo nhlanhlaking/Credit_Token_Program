@@ -61,7 +61,7 @@ def prepaidVoucher():
             print(f"You were helped by {cashier_name} {cashier_surname}")
             print(""); print(">" * 56)
             
-            restart = input("Do you wish to start a new transaction: ").lower()
+            restart = input("Yes/No, do you wish to start a new transaction: ").lower()
             if restart == "yes":
                 prepaidVoucher()
             elif restart == "no":
@@ -99,7 +99,7 @@ def prepaidVoucher():
                 print(f"You were helped by {cashier_name} {cashier_surname}")
                 print(""); print(">" * 56)
                 
-                restart = input("Do you wish to start a new transaction: ").lower()
+                restart = input("Yes/No, do you wish to start a new transaction: ").lower()
                 if restart == "yes":
                     prepaidVoucher()
                 elif restart == "no":
@@ -132,7 +132,7 @@ def prepaidVoucher():
                 print(f"You were helped by {cashier_name} {cashier_surname}")
                 print(""); print(">" * 56)
                 
-                restart = input("Do you wish to start a new transaction: ").lower()
+                restart = input("Yes/No, do you wish to start a new transaction: ").lower()
                 if restart == "yes":
                     prepaidVoucher()
                 elif restart == "no":
@@ -164,7 +164,7 @@ def prepaidVoucher():
                 print(f"You were helped by {cashier_name} {cashier_surname}")
                 print(""); print(">" * 56)
                 
-                restart = input("Do you wish to start a new transaction: ").lower()
+                restart = input("Yes/No, do you wish to start a new transaction: ").lower()
                 if restart == "yes":
                     prepaidVoucher()
                 elif restart == "no":
@@ -196,7 +196,7 @@ def prepaidVoucher():
                 print(f"You were helped by {cashier_name} {cashier_surname}")
                 print(""); print(">" * 56)
                 
-                restart = input("Do you wish to start a new transaction: ").lower()
+                restart = input("Yes/No, do you wish to start a new transaction: ").lower()
                 if restart == "yes":
                     prepaidVoucher()
                 elif restart == "no":
@@ -239,7 +239,7 @@ def prepaidVoucher():
             print(f"You were helped by {cashier_name} {cashier_surname}"); print(""); 
             print(">" * 56)  
             
-            restart = input("Do you wish to start a new transaction: ").lower()
+            restart = input("Yes/No, do you wish to start a new transaction: ").lower()
             if restart == "yes":
                 prepaidVoucher()
             elif restart == "no":
@@ -250,7 +250,7 @@ def prepaidVoucher():
                 exit()         
         else: 
             if ans != voucher:
-                restart = input("You have entered invalid answer do wish to restart the programme? ").lower()
+                restart = input("Yes/No, do you wish to start a new transaction: ").lower()
                 if restart == "yes":
                     prepaidVoucher()
                 elif restart == "no":
@@ -261,8 +261,3 @@ def prepaidVoucher():
                     exit() 
                             
 prepaidVoucher()
-
-
-
-
-
