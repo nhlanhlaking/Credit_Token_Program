@@ -13,7 +13,6 @@ network = ["mtn", "vodacom", "cell c", "telkom"]
 cashier_name = input("Cashier name: ")
 cashier_surname = input("Cashier surname: ")
 print("")
-bold = "\33[1m"
 
 #list of potential buyers of our pre-paid vourchers.
 potential_buyers = ["Blessing Malehopo", "Bontle Lekgwathi", "Musa Sibiya", "Andile Mabuza", "Arnold Mabope", "Tiisetso Mokoena", "Lerato Bridgete Pule", "Olerato Bridgette Seemise", "Happy Phalane", "Nhlanhla Nhlapo", "Fanie Miya", "Nozipho Ngubane", "Koketso Marema", "Katlego Phoku", "Nqobile Zulu", "Lehlogonolo Maphari"]
@@ -41,7 +40,7 @@ def prepaidVoucher():
             TodayDate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
             print(">" * 56)
-            print(f"{bold}" + " " * 15 + "JABULANI STREET SUPERMARKET")
+            print(" " * 15 + "JABULANI STREET SUPERMARKET")
             print(""); print("") 
             print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553")
             print(""); print("-" * 55)
@@ -73,10 +72,6 @@ def prepaidVoucher():
                 exit() 
                 
                 
-            
-            
-                
-                
                 
     #Should the client request to purchase airtime voucher, this code will be executed.            
         elif ans == voucher[1]:
@@ -90,12 +85,12 @@ def prepaidVoucher():
                 pin = random.randint(10000000000000000000, 99999999999999999999)
                 
                 print(">" * 56)
-                print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
+                print(" " * 15 + "JABULANI STREET SUPERMARKET")
                 print(""); print("")
                 print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553")
                 print(""); print("-" * 55)
                 print(f"Supplier:  {network_ans.upper()}")
-                print("Adr: 2050 Block PP3, Shihlengwe Str", " Soshanguve")
+                print("Adr: 2050 Block PP3, Shihlengwe Str", " Soshanguve") 
                 print("TAX Invoice NO", "   442 01 06777"); print("-" * 55)
                 print("                    Airtime voucher"); print("")
                 print("Amount                               ", "R", "%.2f" % amount1)
@@ -123,7 +118,7 @@ def prepaidVoucher():
                 pin = random.randint(10000000000000000000, 99999999999999999999)
                 
                 print(">" * 56)
-                print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
+                print(" " * 15 + "JABULANI STREET SUPERMARKET")
                 print(""); print("")
                 print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553")
                 print(""); print("-" * 55)
@@ -155,7 +150,7 @@ def prepaidVoucher():
                 pin = random.randint(10000000000000000000, 99999999999999999999)
                 
                 print(">" * 56)
-                print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
+                print(" " * 15 + "JABULANI STREET SUPERMARKET")
                 print(""); print("")
                 print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553")
                 print(""); print("-" * 55); print("Supplier: ", network_ans.upper())
@@ -187,7 +182,7 @@ def prepaidVoucher():
                 pin = random.randint(10000000000000000000, 99999999999999999999)
                 
                 print(">" * 56)
-                print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
+                print(" " * 15 + "JABULANI STREET SUPERMARKET")
                 print(""); print(" ")
                 print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553"); print("")
                 print("-" * 55)
@@ -225,7 +220,7 @@ def prepaidVoucher():
             TodayDate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
             
             print(">" * 56)
-            print(f"{bold}" " " * 15 + "JABULANI STREET SUPERMARKET")
+            print(" " * 15 + "JABULANI STREET SUPERMARKET")
             print(""); print("")
             print("     Nhlanhla Nhlapo", "      Cel: +278 207 0553")
             print(""); print("-" * 55)
@@ -263,10 +258,9 @@ def prepaidVoucher():
                     exit()
                 else:
                     print("You have entered invalid answer please restart the programme")
-                exit() 
+                    exit() 
                             
 prepaidVoucher()
-
 
 
 
