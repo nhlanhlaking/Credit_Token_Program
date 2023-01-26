@@ -4,32 +4,30 @@ import datetime
 #This program is still under development; several functions are missing; nonetheless, it is capable of producing desired outcomes.
 
 
-
-#Variables containing relevant list for pre-paid voucher
-voucher = ["water", "airtime", "electricity"]
-network = ["mtn", "vodacom", "cell c", "telkom"]
-
-#The person who is attending the client
-cashier_name = input("Cashier name: ")
-cashier_surname = input("Cashier surname: ")
-print("")
-
-#list of potential buyers of our pre-paid vourchers.
-potential_buyers = ["Blessing Malehopo", "Bontle Lekgwathi", "Musa Sibiya", "Andile Mabuza", "Arnold Mabope", "Tiisetso Mokoena", "Lerato Bridgete Pule", "Olerato Bridgette Seemise", "Happy Phalane", "Nhlanhla Nhlapo", "Fanie Miya", "Nozipho Ngubane", "Koketso Marema", "Katlego Phoku", "Nqobile Zulu", "Lehlogonolo Maphari"]
-name = random.choice(potential_buyers)
-address = random.randint(1, 200)
-meter_no = random.randint(10000000000, 99999999999)
-
-
 #This is the function that executes all the transaction requested by the client and it is performed by the cashier.
 def prepaidVoucher():
+    #Variables containing relevant list for pre-paid voucher.
+    voucher = ["water", "airtime", "electricity"]
+    network = ["mtn", "vodacom", "cell c", "telkom"]
+        
+    #list of potential buyers of our pre-paid vourchers.
+    potential_buyers = ["Blessing Malehopo", "Bontle Lekgwathi", "Musa Sibiya", "Andile Mabuza", "Arnold Mabope", "Tiisetso Mokoena", "Lerato Bridgete Pule", "Olerato Bridgette Seemise", "Happy Phalane", "Nhlanhla Nhlapo", "Fanie Miya", "Nozipho Ngubane", "Koketso Marema", "Katlego Phoku", "Nqobile Zulu", "Lehlogonolo Maphari"]
+    name = random.choice(potential_buyers)
+    address = random.randint(1, 200)
+    meter_no = random.randint(10000000000, 99999999999)
+    
+    
     while True:
+        #The person who is attending the client.
+        cashier_name = input("Cashier name: ")
+        cashier_surname = input("Cashier surname: ")
+        print("")
         print(voucher)
         print("")
         ans = input("Choose preferred voucher: ")
     
 
-    #Should the client request to purchase water credit token, this code will be executed.
+        #Should the client request to purchase water credit token, this code will be executed.
         if ans == voucher[0]:   
             amount_of_kl = float(input("How many kilolitres: "))
             one_kilolitre_price = 14.27
@@ -73,7 +71,7 @@ def prepaidVoucher():
                 
                 
                 
-    #Should the client request to purchase airtime voucher, this code will be executed.            
+        #Should the client request to purchase airtime voucher, this code will be executed.            
         elif ans == voucher[1]:
             print(network)
             print("")
@@ -207,7 +205,7 @@ def prepaidVoucher():
                     exit() 
             
                     
-    #Should the client request to purchase electricity voucher, this code will be executed.          
+        #Should the client request to purchase electricity voucher, this code will be executed.          
         elif ans == voucher[2]:
             print("")
             purchase_amount_elec = float(input("Enter amount: "))
@@ -261,3 +259,5 @@ def prepaidVoucher():
                     exit() 
                             
 prepaidVoucher()
+
+
